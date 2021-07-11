@@ -1,6 +1,8 @@
 # Microsoft-Teams-Clone
 
-A Video Chat web application 
+A Video Chat web application which enables people to connect and work in a collaborative manner.
+
+Check out the Live Demo at: https://teams-clone-1.herokuapp.com/
 
 ## Features
 1. Upto 4 participants can join in and have a video conversation
@@ -14,3 +16,9 @@ A Video Chat web application
 * Express.js
 * Socket.io
 * PeerJS (WebRTC)
+
+## How to run the project?
+1. Clone this repository in your local system using the command `git clone repo-link`
+2. Open the terminal from the project directory and run the command `npm start`
+3. Go to your browser and type `localhost:443` in the address bar
+4. The application will be up and running!
