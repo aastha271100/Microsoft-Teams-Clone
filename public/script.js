@@ -150,6 +150,8 @@ inviteButton.addEventListener("click", (e) => {
   );
 });
 
+
+// Sharing screen feature
 shareScreen.addEventListener("click", async ()=>{
 const video = document.createElement("video");
 let captureStream = null;
@@ -157,22 +159,22 @@ let captureStream = null;
   try {
     captureStream = await navigator.mediaDevices.getDisplayMedia();
     let Sender = peer.getSenders().map(function (sender) {
-      sender.replaceTrack(captureStream.getTracks().find(function (track) {
+      Sender.replaceTrack(captureStream.getTracks().find(function (track) {
           return track.kind === sender.track.kind;
       }));
   });
-    // Sender.replaceTrack(captureStream)
-    // addVideoStream(video, captureStream);
-    // video.srcObject = captureStream;
-    // video.onloadedmetadata = function(e) {
-    //   video.play();
-    //   videoGrid.append(video);
-    // };
+    Sender.replaceTrack(captureStream)
+    addVideoStream(video, captureStream);
+    video.srcObject = captureStream;
+    video.onloadedmetadata = function(e) {
+      video.play();
+      videoGrid.append(video);
+    };
 
   } catch(err) {
     console.error("Error: " + err);
   }
-  //  return captureStream;
+    return captureStream;
 })
 
 //Displays chat messages along with user name and time at which the message was sent

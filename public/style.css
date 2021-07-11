@@ -212,10 +212,10 @@ video {
   color: rgb(255, 255, 255);
 }
 /* hovering effects */
-/* .options__button:hover{
-  background-color:#240303;
-  /* opacity: 0.5; 
-} */
+.options__button:hover{
+  background-color:#e2065a;
+} 
+
 @media (max-width: 700px) {
   .main__right {
     display: none;
