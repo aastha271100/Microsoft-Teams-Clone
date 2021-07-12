@@ -22,3 +22,14 @@ Check out the Live Demo at: https://teams-clone-1.herokuapp.com/
 2. Open the terminal from the project directory and run the command `npm start`
 3. Go to your browser and type `localhost:443` in the address bar
 4. The application will be up and running!
+
+## Limitations
+1. Cross browser compatibility.
+2. Chat messages not visible before or after the meeting but only during the meeting
+
+## Future Scope
+1. Record the meeting feature can be added
+2. Caption generation
+3. User authentication
+4. Invite link being automatically sent via mail/whatsapp
+5. Raise hand and other reactions
