@@ -33,3 +33,4 @@ Check out the Live Demo at: https://teams-clone-1.herokuapp.com/
 3. User authentication
 4. Invite link being automatically sent via mail/whatsapp
 5. Raise hand and other reactions
+6. Waiting rooms
