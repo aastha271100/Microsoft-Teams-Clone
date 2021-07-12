@@ -149,6 +149,7 @@ video {
 .message {
   display: flex;
   flex-direction: column;
+  color:rgb(234, 234, 238);
 }
 .profile{
   display: flex;
