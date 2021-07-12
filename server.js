@@ -1,6 +1,6 @@
-const express = require("express");
+const express = require("express");// Initialising express application. (framework of node.js)      
 const app = express();
-const server = require("http").Server(app);
+const server = require("http").Server(app);     // Server that's going to run (inside const express)
 const { v4: uuidv4 } = require("uuid");
 app.set("view engine", "ejs");
 
@@ -11,13 +11,13 @@ const io = require("socket.io")(server, {
   }
 });
 
-
+//run the peerJS server
 const { ExpressPeerServer } = require("peer");
 const peerServer = ExpressPeerServer(server, {
   debug: true,
 });
 
-app.use("/peerjs", peerServer);
+app.use("/peerjs", peerServer);     //specify to the peer server what url to be used, ie Url is '/peerjs'
 app.use(express.static("public"));
 
 
